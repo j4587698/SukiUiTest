@@ -5,12 +5,10 @@ using Avalonia;
 
 namespace SukiUiTest.Android
 {
-    [Activity(Label = "SukiUiTest.Android", Theme = "@style/MyTheme.NoActionBar", Icon = "@drawable/icon", LaunchMode = LaunchMode.SingleInstance, ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
-    public class MainActivity : AvaloniaActivity<App>
+    [Activity(Label = "SukiUiTest.Android", Theme = "@style/MyTheme.NoActionBar", Icon = "@drawable/icon",
+        LaunchMode = LaunchMode.SingleInstance,
+        ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
+    public class MainActivity : AvaloniaMainActivity
     {
-        protected override AppBuilder CustomizeAppBuilder(AppBuilder builder)
-        {
-            return base.CustomizeAppBuilder(builder);
-        }
     }
 }

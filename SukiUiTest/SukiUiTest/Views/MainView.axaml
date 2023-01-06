@@ -3,13 +3,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:SukiUiTest.ViewModels"
+             xmlns:views="clr-namespace:SukiUiTest.Views"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="SukiUiTest.Views.MainView"
-             Foreground="White"
-             Background="#171C2C">
+             x:Class="SukiUiTest.Views.MainView">
   <Design.DataContext>
     <viewModels:MainViewModel />
   </Design.DataContext>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+  <TabControl Classes="MobileTabView">
+      <TabItem Header="Test1" Classes="MobileTabItem">
+          <views:TestView></views:TestView>
+      </TabItem>
+      <TabItem Header="Test2">
+          <views:TestView></views:TestView>
+      </TabItem>
+  </TabControl>
 </UserControl>

@@ -7,6 +7,6 @@
     </Application.DataTemplates>
 
     <Application.Styles>
-        <FluentTheme Mode="Dark"/>
+        <StyleInclude Source="avares://SukiUI/Theme/Index.xaml" />
     </Application.Styles>
 </Application>
